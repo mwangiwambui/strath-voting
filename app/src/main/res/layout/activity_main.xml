@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Strath logo"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/EditText_User_EmailID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="61dp"
+        android:gravity="center"
+        android:hint="@string/enter_email" />
+
+    <EditText
+        android:id="@+id/EditText_User_Password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditText_User_EmailID"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Button_SignUp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditText_User_Password"
+        android:layout_marginTop="27dp"
+        android:text="SIGN UP"
+        android:textColor="#ffffff"
+        android:background="#0000FF" />
+
+    <Button
+        android:id="@+id/Button_LoginActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button_SignUp"
+        android:layout_marginTop="22dp"
+        android:text="LOGIN"
+        android:textColor="#ffffff"
+        android:background="#0000FF"/>
+
+</RelativeLayout>
