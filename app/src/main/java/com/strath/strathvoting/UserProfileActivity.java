@@ -65,7 +65,9 @@ public class UserProfileActivity extends AppCompatActivity {
         card_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+                // Redirect to Main Voting Activity after click on voting card.
+                Intent intent = new Intent(UserProfileActivity.this, MainVotingActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -18,7 +18,7 @@
             android:layout_height="0dp">
 
             <TextView
-                android:id="@+id/word"
+                android:id="@+id/user_email"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_width="match_parent"
