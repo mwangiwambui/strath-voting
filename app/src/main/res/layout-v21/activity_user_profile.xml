@@ -20,8 +20,11 @@
             <TextView
                 android:id="@+id/user_email"
                 android:textSize="16sp"
-                android:padding="10dp"
+                android:paddingTop="8dp"
+                android:paddingLeft="14dp"
+                android:paddingBottom="8dp"
                 android:textStyle="bold"
+                android:textColor="@android:color/white"
                 android:background="@color/material_yellow_700"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
