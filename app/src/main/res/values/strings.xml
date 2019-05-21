@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Strath Voting</string>
+    <string name="app_name">Strathmore University</string>
     <string name="enter_email">Enter Your Email Here</string>
     <string name="enter_password">Enter Your Password Here</string>
     <string name="button_signup">Click Here To Sign Up</string>

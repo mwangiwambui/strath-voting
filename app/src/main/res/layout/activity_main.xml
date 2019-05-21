@@ -6,24 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:gravity="center"
-        android:text="Strath logo"
-        android:textColor="#000"
-        android:textSize="20sp" />
+    <ImageView
+        android:id="@+id/strath_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/strath_logo"/>
+
+
 
     <EditText
         android:id="@+id/EditText_User_EmailID"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_marginTop="61dp"
+        android:layout_below="@+id/strath_logo"
+        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:hint="@string/enter_email" />
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"/>
 
     <EditText
         android:id="@+id/EditText_User_Password"
@@ -43,7 +44,7 @@
         android:layout_marginTop="27dp"
         android:text="SIGN UP"
         android:textColor="#ffffff"
-        android:background="#0000FF" />
+        android:background="@color/material_blue_900" />
 
     <Button
         android:id="@+id/Button_LoginActivity"
@@ -53,6 +54,6 @@
         android:layout_marginTop="22dp"
         android:text="LOGIN"
         android:textColor="#ffffff"
-        android:background="#0000FF"/>
+        android:background="@color/material_blue_900"/>
 
 </RelativeLayout>

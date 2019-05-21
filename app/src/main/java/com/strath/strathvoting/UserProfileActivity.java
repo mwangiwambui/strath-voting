@@ -3,6 +3,7 @@ package com.strath.strathvoting;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,6 +19,9 @@ public class UserProfileActivity extends AppCompatActivity {
     // Creating TextView.
     TextView userEmailShow ;
 
+    //Creating card view
+    CardView card_view;
+
     // Creating FirebaseAuth.
     FirebaseAuth firebaseAuth ;
 
@@ -28,9 +32,10 @@ public class UserProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
-        // Assigning ID's to button and TextView.
+        // Assigning ID's to button , CardView and TextView.
         logout = (Button)findViewById(R.id.logout);
         userEmailShow = (TextView)findViewById(R.id.user_email);
+        card_view = (CardView) findViewById(R.id.voting_card_view);
 
         // Adding FirebaseAuth instance to FirebaseAuth object.
         firebaseAuth = FirebaseAuth.getInstance();
@@ -54,7 +59,15 @@ public class UserProfileActivity extends AppCompatActivity {
         firebaseUser = firebaseAuth.getCurrentUser();
 
         // Getting logged in user email from firebaseUser.getEmail() method and set into TextView.
-        userEmailShow.setText("Successfully Logged In, Your Email = " + firebaseUser.getEmail());
+        userEmailShow.setText("Welcome " + firebaseUser.getEmail());
+
+        //Adding click listener on voting card view
+        card_view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // do whatever you want to do on click (to launch any fragment or activity you need to put intent here.)
+            }
+        });
 
         // Adding click listener on logout button.
         logout.setOnClickListener(new View.OnClickListener() {
