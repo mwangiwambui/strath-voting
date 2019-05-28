@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Strathmore University</string>
-    <string name="enter_email">Enter Your Email Here</string>
-    <string name="enter_password">Enter Your Password Here</string>
+    <string name="enter_email">Email</string>
+    <string name="enter_password">Password</string>
     <string name="button_signup">Click Here To Sign Up</string>
     <string name="firebase_user_registration_form">Firebase User Registration Form</string>
+    <string name="voting_toolbar_text_view">Strath Voting</string>
 </resources>
